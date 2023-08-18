@@ -8,7 +8,8 @@ void main(){
 }
 ~~~
 
-모든 Dart 프로그램은 반드시 하나의 main 함수를 포함하고 있어야 한다. main 함수는 가장 먼저 실행이 되는 작업이다. 또한, main함수를 종료하는 행위는 프로그램을 종료하는 행위이다.      
+모든 Dart 프로그램은 반드시 하나의 main 함수를 포함하고 있어야 한다. main 함수는 가장 먼저 실행이 되는 작업이다.    
+또한, main함수를 종료하는 행위는 프로그램을 종료하는 행위이다.      
 
 ## 기초적인 숫자와 문자 다루기
 
@@ -208,7 +209,8 @@ void main(){
         print("$number x $count = ${number*count}");
         count++;
     }while(count<=3);
-    //while구문과 for구문은 조건에 따라서 반복 작업이 한번도 실행되지 않을 수 있으나 do-while 구문은 반복 작업이 최소한 한번은 수행된다.
+    //while구문과 for구문은 조건에 따라서 반복 작업이 한번도 실행되지 않을 수 있으나
+        do-while 구문은 반복 작업이 최소한 한번은 수행된다.
 
     print("\n[4] nested loop statement.\n");
     for(count = number = 1; number<=3; number++){
@@ -341,7 +343,8 @@ void main(){
 
 ## List를 이용한 복수 데이터 처리
 
-List 클래스는 복수의 값을 저장할 수 있으며, 개발자가 지정한 순서대로 일렬로 저장하는 데이터 타입이다. 저장되는 복수의 값은 동일하 데이터 타입일 수 있으며, 반대로 서로 다른 데이터 타입을 함께 섞어서 저장할 수도 있다.
+List 클래스는 복수의 값을 저장할 수 있으며, 개발자가 지정한 순서대로 일렬로 저장하는 데이터 타입이다.       
+저장되는 복수의 값은 동일하 데이터 타입일 수 있으며, 반대로 서로 다른 데이터 타입을 함께 섞어서 저장할 수도 있다.
 
 ~~~dart
 void main(){
@@ -373,7 +376,8 @@ void main(){
     List<int> intList = [1,2,3,4,5];
     print("[10] intList is List<int> ${intList is List<int>}");
     print("[11] mixedList is List<dynamic> ${mixedList is List<dynamic>}");
-    //정수,실수, 문자열이 섞인 mixedList를 만들때 Dart 언어가 알아서 서로 다른 타입이 처리 가능한 List<dynamic>으로 만들었다.
+    //정수,실수, 문자열이 섞인 mixedList를 만들때 Dart 언어가 알아서
+    //서로 다른 타입이 처리 가능한 List<dynamic>으로 만들었다.
 }
 ~~~
 
@@ -470,7 +474,8 @@ void main(){
     print("$iList");
 
   //forEach
-  //다수의 element를 갖는 객체가 있을 때, 객체 내부의 전체 혹은 일부 element들에 대해서 동일한 작업을 수행하는 경우 사용하는 문법
+  //다수의 element를 갖는 객체가 있을 때,
+    //객체 내부의 전체 혹은 일부 element들에 대해서 동일한 작업을 수행하는 경우 사용하는 문법
   iList.forEach(printStar);
 
   //Nested Function(중첩 함수)
