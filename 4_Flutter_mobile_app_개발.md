@@ -33,7 +33,8 @@ main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
     //StatelessWidget 클래스를 extends하는 경우에는 반드시 build() 메서드를 오버라이드 해야한다.
-    //build()는 운영체제가 앱을 실행하면서 화면에 출력해야 하는 내용들을 준비하고, 화면에 나타나도록 하는 핵심 기능을 한다.
+    //build()는 운영체제가 앱을 실행하면서 화면에 출력해야 하는 내용들을 준비하고,
+    //화면에 나타나도록 하는 핵심 기능을 한다.
     @override
     Widget build(BuildContext context){
         return MaterialApp(
@@ -59,7 +60,8 @@ class MyApp extends StatelessWidget{
 ~~~
 
 StatelessWidget과 StatefulWidget은 가장 대표적인 위젯이다.     
-프로그램이 사용자로부터 정보를 받고, 이를 토대로 화면 구성이나 콘텐츠 내용이 바뀌어야 한다면 StatefulWidgt, 고정된 내용을 사용자에게 일방적으로 보여주기만 한다면 StatlessWidget을 사용한다.      
+프로그램이 사용자로부터 정보를 받고, 이를 토대로 화면 구성이나 콘텐츠 내용이 바뀌어야 한다면 StatefulWidgt,      
+고정된 내용을 사용자에게 일방적으로 보여주기만 한다면 StatlessWidget을 사용한다.      
 
 MaterialApp은 Material Design을 사용하는 애플리케이션에서 공통적으로 요구되는 다수의 위젯들을 감싸주는 편리한 위젯이다.      
 
@@ -259,7 +261,8 @@ class _MyHomePageState extends State<MyHomePage> {
 ~~~
 
 StatefulWidget은 프로그램의 변경 가능한 상태(state)를 가지는 State 위젯을 만들어서 사용한다.       
-상태(state)는 위젯이 프로그램 속에서 존재하는(life-cycle) 동안 변경될 수 있고 위젯이 화면 출력 작업을 하는 build() 메서드에 의해서 동기적으로 읽을 수 있는 정보이다.        
+상태(state)는 위젯이 프로그램 속에서 존재하는(life-cycle) 동안 변경될 수 있고       
+위젯이 화면 출력 작업을 하는 build() 메서드에 의해서 동기적으로 읽을 수 있는 정보이다.        
 프로그램 실행 동안 바뀌는 값은 StatefulWidget 자체에 저장하는 것이 아니고, StatefulWidget이 만드는 State 위젯에 저장하는 것이다.     
 State 위젯을 생성(create)하는 것이 StatefulWidget의 역할이다. 변경되는 정보 자체는 StatefulWidget이 만드는 State 위젯의 내용이다.      
 이를 위해서 statefulWidget의 createState() 메서드를 오버라이드해야 한다.
