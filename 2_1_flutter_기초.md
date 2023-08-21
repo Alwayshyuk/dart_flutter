@@ -110,7 +110,7 @@ void printTwo() async {
 ////One Three Future Two
 ~~~
 
-Future.delayed() 함수는 Duration 기간 동안 기다린 후에 진행하라는 의미이다.
+Future.delayed() 함수는 Duration 기간 동안 기다린 후에 진행하라는 의미이다.       
 await 키워드를 붙인다면 이후 코드의 실행이 멈추고      
 main() 함수의 나머지 코드를 모두 실행하고 await가 붙은 코드부터 차례대로 실행한다.
 
